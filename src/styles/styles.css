@@ -1,4 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url(header.css);
+@import url(home.css);
+@import url(menu.css);
+@import url(footer.css);
+
+:root {
+    --primary-color: #d4012c;
+    --secondary-color: #070336;
+    --tertiary-color: #fff9ea;
+}
 
 * {
     font-family: "Poppins", serif;
@@ -8,7 +18,7 @@
 }
 
 body {
-    background-color: #fff9ea;
+    background-color: var(--tertiary-color);
 }
 
 section {
@@ -21,7 +31,7 @@ section {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #070336;
+    background-color: var(--secondary-color);
     border-radius: 12px;
     padding: 10px 14px;
     font-weight: 600;
@@ -31,11 +41,15 @@ section {
 }
 
 .btn-default:hover {
-    background-color: #d4012c;
+    background-color: var(--primary-color);
 }
 
-.social-media-buttons {
-    
+.section-title {
+    color: var(--primary-color);
+    font-size: 1.563rem
 }
 
+.section-subtitle {
+    font-size: 2.1875rem;
+}
 
